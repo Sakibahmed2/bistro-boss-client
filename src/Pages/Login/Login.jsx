@@ -3,6 +3,7 @@ import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-s
 import { AuthContext } from '../../Providers/AuthProviders';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import SocialLogin from '../Shared/SocialLogin/SocialLogin';
 
 
 const Login = () => {
@@ -93,6 +94,7 @@ const Login = () => {
                                 <input disabled={false} className='btn bg-[#D1A054B2] border-none' type="submit" value="Login" />
                             </div>
                         </form>
+                        <SocialLogin />
                     </div>
                 </div>
             </div>
